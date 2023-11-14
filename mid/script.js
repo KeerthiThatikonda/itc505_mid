@@ -105,7 +105,7 @@ function denseForest() {
 
 function map() {
     player.wit++;
-    showStory("You got the map that sents you to the mystical realm", ['mystical realm.jpg'])
+    showStory("You got the map that sents you to the mystical realm", ['map.jpeg'])
 
     showOptions([
         {text: "Go to the mystical realm", action: finalAct}
@@ -114,7 +114,7 @@ function map() {
 
 function couragedead(){
     player.dead++;
-    showStory("The creatures are strong enoufgh to kill you. You took the wrong path. You are dead");
+    showStory("The creatures are strong enoufgh to kill you. You took the wrong path. You are dead", ['creature.jpeg']);
 
     showOptions([
         {text: "Restart the Game", action: startGame}
@@ -123,7 +123,7 @@ function couragedead(){
 
 function restByRiver() {
     player.diplomacy++;
-    showStory("While resting by the river, you spot a group of travelers...");
+    showStory("While resting by the river, you spot a group of travelers...", ['peaceful-resolution-featured-image.jpg', 'hill.jpeg']);
 
     // Continue the story
     showOptions([
@@ -134,7 +134,7 @@ function restByRiver() {
 
 function diplomacydead(){
     player.dead++;
-    showStory("The travelars are on the same path and they killed you");
+    showStory("The travelars are on the same path and they killed you", ['people.jpeg']);
 
     showOptions([
         {text: "Restart the Game", action: startGame}
@@ -143,7 +143,7 @@ function diplomacydead(){
 
 function observeTravelers() {
     player.wit++;
-    showStory("You found a paper on the boat.")
+    showStory("You found a Map on the boat." ['boat.jpeg'])
 
     showOptions([
         {text: "Go get the mystary map from the boat", action: gotoboat}
@@ -152,7 +152,7 @@ function observeTravelers() {
 
 function gotoboat(){
     player.courage++;
-    showStory("You got the map that sents you to the mystical realm")
+    showStory("You got the map that sents you to the mystical realm",['map.jpeg'])
 
     showOptions([
         {text: "Go to the mystical realm", action: finalAct}
@@ -162,7 +162,7 @@ function gotoboat(){
 
 // Final Act
 function finalAct() {
-    showStory("You reach the heart of the mystical realm where destiny awaits...");
+    showStory("You reach the heart of the mystical realm where destiny awaits...", ['final battle.jpg','peaceful-resolution-featured-image.jpg']);
 
     // Continue the story
     showOptions([
@@ -172,7 +172,7 @@ function finalAct() {
 }
 
 function engageInBattle(){
-    showStory("You killed the finall Boss. You got the treasure that you are looking for.")
+    showStory("You killed the finall Boss. You got the treasure that you are looking for.", ['dead.jpeg'])
 
     showOptions([
 
