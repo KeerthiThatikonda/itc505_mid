@@ -11,6 +11,74 @@
         <div id="story-text"></div>
         <div id="options-container"></div>
     </div>
+    <footer>
+        <h1>Addemdem</h1>
+        <p>
+        <strong>HTML Structure:</strong><br>
+        The game seems to be integrated into an HTML page with elements having IDs "story-text" and "options-container."
+    </p>
+
+    <p>
+        <strong>Player Object:</strong><br>
+        The player object tracks the player's attributes, including courage, wit, diplomacy, and a counter for the number of times the player has died.
+    </p>
+
+    <p>
+        <strong>startGame Function:</strong><br>
+        Initiates the game by displaying the initial story and options. It's the entry point of the game.
+    </p>
+
+    <p>
+        <strong>showStory Function:</strong><br>
+        Displays a given text and an array of images. The images are appended to the story element. This function is modified to accept an array of image paths and image size.
+    </p>
+
+    <p>
+        <strong>showOptions Function:</strong><br>
+        Clears the options container and creates buttons for each option passed as an argument. Each button has an associated action (a function to be executed when the button is clicked).
+    </p>
+
+    <p>
+        <strong>Action Functions:</strong><br>
+        Functions like act1, pathOfCourage, alternativeRoute, etc., represent different points in the story where the player makes choices. These functions update the story, modify player attributes, and present new options.
+    </p>
+
+    <p>
+        <strong>Outcome Functions:</strong><br>
+        Functions like witdead, couragedead, diplomacydead, etc., handle specific outcomes based on the player's choices. If certain conditions are met (e.g., the player's death), the story is updated, and the game offers the option to restart.
+    </p>
+
+    <p>
+        <strong>Final Act Functions:</strong><br>
+        finalAct, engageInBattle, and peacefulResolution represent the climax of the story. The player is presented with crucial decisions that may lead to different endings.
+    </p>
+
+    <p>
+        <strong>Game Progression:</strong><br>
+        The game progresses as the player makes choices, and different paths open up based on the player's attributes and decisions.
+    </p>
+
+    <p>
+        <strong>Function Calls:</strong><br>
+        The startGame function is called twice at the end of the script, possibly as an oversight. It should be called only once at the beginning of the script to start the game.
+    </p>
+
+    <p>
+        <strong>Story and Image Progression:</strong><br>
+        The story unfolds with images to enhance the narrative. Images are displayed at key points in the story, creating a visual aspect to the text-based adventure.
+    </p>
+
+    <p>
+        <strong>Player Attribute Tracking:</strong><br>
+        The player's attributes (courage, wit, diplomacy) are updated based on their choices, influencing the outcome of the story.
+    </p>
+
+    <p>
+        <strong>Game Restart:</strong><br>
+        The game allows the player to restart after reaching certain outcomes, such as death or completion of the story.
+    </p>
+
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
